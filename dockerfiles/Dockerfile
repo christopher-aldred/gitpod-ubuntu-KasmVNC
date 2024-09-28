@@ -65,7 +65,7 @@ RUN mkdir -p /home/gitpod/Desktop
 USER root
 
 # Set up script to launch graphics and vnc
-COPY start-vnc-session.sh /usr/bin/start-vnc-session.sh
+COPY dockerfiles/start-vnc-session.sh /usr/bin/start-vnc-session.sh
 RUN chmod +x /usr/bin/start-vnc-session.sh && \
     dos2unix /usr/bin/start-vnc-session.sh
 
